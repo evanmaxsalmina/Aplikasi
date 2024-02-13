@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/tilges"
+        android:text="Aritmatika Kalkulator"
+        android:id="@+id/calcT"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calcT"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:hint="Masukkan angka pertama"
+        android:id="@+id/satu"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/satu"
+        android:layout_margin="50dp"
+        android:padding="10dp"
+        android:inputType="number"
+        android:background="@drawable/border"
+        android:hint="Masukkan angka kedua"
+        android:id="@+id/dua"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dua"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:id="@+id/spin"
+        android:entries="@array/operations"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spin"
+        android:id="@+id/hasil"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/tilges"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Hasil"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/ko"
+        android:id="@+id/btnHitung"
+        android:layout_marginEnd="70dp"
+        android:text="HITUNG"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

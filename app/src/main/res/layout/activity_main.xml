@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back!"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/wel"
+        android:textColor="@color/black"
+        android:fontFamily="@font/tilges"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We're so excited to see you again!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/wel"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/exited"/>
+
+    <TextView
+        android:id="@+id/acun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Information"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/exited"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email or Phone Number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acun"
+        android:id="@+id/email"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:hint="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/pass"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:layout_marginLeft="25dp"
+        android:textColor="#1E90FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        android:id="@+id/forgot"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use a password manager?"
+        android:textColor="#1E90FF"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgot"
+        android:id="@+id/use"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/use"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:background="@drawable/ko"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
